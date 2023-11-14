@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import Error from "./error";
+import Error from "./Error";
 import Response from "./Response";
 import { TailSpin } from 'react-loader-spinner';
 
