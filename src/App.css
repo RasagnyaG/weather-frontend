@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --border-radius: 12px;
+  --foreground-hex: #ffffff;
+  --background-hex: #040412;
+  --secondary-hex : #132043;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color-scheme: dark;
+  color: rgb(var(--foreground-hex));
+  background-color: var(--background-hex);
+  font-family: 'Montserrat', sans-serif;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  width: 60%;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1{
+  color: var(--foreground-hex);
+  margin: 2.5rem;
+  font-size: 2.5rem;
+}
+
+label {
+  color: var(--foreground-hex);
+  align-self: flex-start;
+ 
+}
+button {
+  background-color: var(--secondary-hex);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input, button , select{
+  height: 3rem;
+  margin: 1rem;
+  margin-left: 0;
+  width: 35rem;
+  padding: 1rem;
+}
+
+select {
+  border-right: 16px solid transparent
+}
+
+input:focus{
+  outline: none
+}
+
+table {
+  color: var(--foreground-hex);
+  text-align: left;
+}
+td , th{
+  padding: 1rem;
+}
+
